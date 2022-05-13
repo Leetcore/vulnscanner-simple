@@ -44,7 +44,7 @@ Amass + Nmap + Nikto Automatisierung von 1337core
     os.system(f"nmap -A -v -Pn --top-ports 1337 --script vulners -T4 --host-timeout 5m --open -iL {target_path}amass.txt -oN {target_path}nmap.txt -oX {target_path}nmap.xml")
 
     # run nikto
-    os.system(f"nikto -host {target_path}amass.txt -Tuning 23457890abcde -port 80,443,1337,8080,8081 -maxtime 5m -o {target_path}nikto.txt")
+    os.system(f"cat {target_path}amass.txt | nikto -host - -Tuning 23457890abcde -timeout 3 -port 80,443 -maxtime 5m -useragent 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' -o {target_path}nikto.txt")
 
     # TODO: port -> show service, show script vulners -> cve
 
