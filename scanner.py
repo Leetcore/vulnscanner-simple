@@ -65,7 +65,7 @@ Amass + Nmap + Nikto Automatisierung von 1337core
         port = webserver.split(":")[1]
 
         # run nikto
-        os.system(f"nikto -host {ip} -port {port} -Tuning 23457890abcde -timeout 3 -port 80,443 -maxtime 5m -useragent 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' -o {target_path}nikto.txt")
+        os.system(f"nikto -host {ip} -port {port} -Tuning 23457890abcde -timeout 3 -maxtime 5m -useragent 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' -o {target_path}nikto.txt")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Simple Amass + Nmap Scanner")
