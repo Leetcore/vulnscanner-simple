@@ -11,7 +11,7 @@ python3 scanner.py
 ```
 Du wirst interaktiv nach dem Domainnamen gefragt.
 Gibt den Domainnamen ohne http// oder www. ein
-Zum Beispiel nur: scanme.nmap.org
+Zum Beispiel: scanme.nmap.org
 
 # Auswertung
 Suche in nmap.txt nach "vulners:" Das zeigt die gefundenen Sicherheitslücken an.
