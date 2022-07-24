@@ -14,6 +14,6 @@ Gibt den Domainnamen ohne http// oder www. ein
 Zum Beispiel: scanme.nmap.org
 
 # Auswertung
-Suche in nmap.txt nach "vulners:" Das zeigt die gefundenen Sicherheitslücken an.
+Suche in nmap.txt nach "CVE" Das zeigt die gefundenen Sicherheitslücken an.
 Die Informationen basieren auf den erkannten Versionsnummern und können deshalb 
-auch falsch sein, wenn die falsche Versionsnummer ausgegeben wird.
+auch falsch sein, wenn die falsche Versionsnummer ausgegeben oder erkannt wird.
